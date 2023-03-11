@@ -9,6 +9,6 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   integrations: [react(), tailwind()],
-  site: 'https://jold1992.github.io/',
+  site: 'https://jold1992.github.io',
   base: "/weather-app"
 });
