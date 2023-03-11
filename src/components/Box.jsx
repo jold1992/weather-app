@@ -76,7 +76,7 @@ function Box() {
                 weatherDetails.current.style.display = '';
                 weatherBox.current.classList.add('fadeIn');
                 weatherDetails.current.classList.add('fadeIn');
-                container.current.style.height = '590px';
+                container.current.style.height = '450px';
 
 
             });
@@ -88,35 +88,36 @@ function Box() {
             <h1 className="text-white text-center pb-8">Weather <span className="text-gradient">App</span></h1>
             <div ref={container} className="container">
                 <div className="search-box">
-                    <i className="fa-solid fa-location-dot"></i>
+                    <i className="fa-solid fa-location-dot" />
                     <input ref={search} type="text" placeholder="Enter your location" value={city} onChange={onChangeText} />
-                    <button className="fa-solid fa-magnifying-glass" onClick={onClick}></button>
+                    <button className="fa-solid fa-magnifying-glass" onClick={onClick} />
                 </div>
-            </div>
-            <div ref={error404} className="not-found">
-                <img src="/assets/images/404.png" />
-                <p>Oops! Invalid location :/</p>
-            </div>
 
-            <div ref={weatherBox} className="weather-box">
-                <img ref={image} src="" />
-                <p ref={temperature} className="temperature"></p>
-                <p ref={description} className="description"></p>
-            </div>
+                <div ref={error404} className="not-found">
+                    <img src="/assets/images/404.png" alt='no-found' />
+                    <p>Oops! Invalid location :/</p>
+                </div>
 
-            <div ref={weatherDetails} className="weather-details">
-                <div className="humidity">
-                    <i className="fa-solid fa-water"></i>
-                    <div className="text">
-                        <span ref={humidity}></span>
-                        <p>Humidity</p>
+                <div ref={weatherBox} className="weather-box flex flex-col items-center">
+                    <img ref={image} src="" alt='weather' />
+                    <p ref={temperature} className="temperature" />
+                    <p ref={description} className="description" />
+                </div>
+
+                <div ref={weatherDetails} className="weather-details">
+                    <div className="humidity">
+                        <i className="fa-solid fa-water" />
+                        <div className="text">
+                            <span ref={humidity} />
+                            <p>Humidity</p>
+                        </div>
                     </div>
-                </div>
-                <div className="wind">
-                    <i className="fa-solid fa-wind"></i>
-                    <div className="text">
-                        <span ref={wind}></span>
-                        <p>Wind Speed</p>
+                    <div className="wind">
+                        <i className="fa-solid fa-wind" />
+                        <div className="text">
+                            <span ref={wind} />
+                            <p>Wind Speed</p>
+                        </div>
                     </div>
                 </div>
             </div>
