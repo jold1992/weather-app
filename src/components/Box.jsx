@@ -44,23 +44,23 @@ function Box() {
 
                 switch (json.weather[0].main) {
                     case 'Clear':
-                        image.current.src = '/assets/images/clear.png';
+                        image.current.src = './clear.png';
                         break;
 
                     case 'Rain':
-                        image.current.src = '/assets/images/rain.png';
+                        image.current.src = './rain.png';
                         break;
 
                     case 'Snow':
-                        image.current.src = '/assets/images/snow.png';
+                        image.current.src = './snow.png';
                         break;
 
                     case 'Clouds':
-                        image.current.src = '/assets/images/cloud.png';
+                        image.current.src = './cloud.png';
                         break;
 
                     case 'Haze':
-                        image.current.src = '/assets/images/mist.png';
+                        image.current.src = './mist.png';
                         break;
 
                     default:
