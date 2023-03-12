@@ -94,7 +94,7 @@ function Box() {
                 </div>
 
                 <div ref={error404} className="not-found">
-                    <img src="/assets/images/404.png" alt='no-found' />
+                    <img src="./404.png" alt='no-found' />
                     <p>Oops! Invalid location :/</p>
                 </div>
 
