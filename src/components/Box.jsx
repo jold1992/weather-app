@@ -121,6 +121,22 @@ function Box() {
                     </div>
                 </div>
             </div>
+            <div className='flex flex-col items-center pt-3'>
+                <p className='text-white pb-2'>
+                    By John <span className="text-gradient">Lomas</span>
+                </p>
+                <div className='flex items-center gap-2'>
+                    <a href='https://github.com/jold1992' className='cursor-pointer' target='_blank' >
+                        <img className='w-8' src='/github.svg' alt='github' title='Github' />
+                    </a>
+                    <a href='https://www.linkedin.com/in/jold1992/' className='cursor-pointer' target='_blank' >
+                        <img className='w-8' src='/linkedin.svg' alt='linkedin' title='Linkedin' />
+                    </a>
+                    <a href='https://twitter.com/jold92' className='cursor-pointer' target='_blank' >
+                        <img className='w-8' src='/x.svg' alt='X' title='X' />
+                    </a>
+                </div>
+            </div>
         </main>
     )
 }
